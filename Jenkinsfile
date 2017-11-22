@@ -1,7 +1,7 @@
 pipeline {
     agent {
         dockerfile {
-            additionalBuildArgs '--build-arg UID=$(id -u) --build-arg GID=$(id -g)'
+            additionalBuildArgs '--build-arg UID=$(id -u) --build-arg GID=$(id -g) --pull'
         }
     }
 
